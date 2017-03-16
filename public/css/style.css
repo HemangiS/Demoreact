@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* index welcome */
+
+.welcome h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Navigation */
+
+.nav {
+  width: 100%;
+  height: 57px;
+  background-color: #9494b8;
+  display: block;
+  font-family: 'Lato', sans-serif;
+}
+.nav ul {
+
+  list-style: none;
+  padding: 0;
+}
+.nav ul:first-child {
+  float: left;
+}
+.nav ul:nth-child(2) {
+  float: right;
+  margin: 0;
+}
+.nav ul:nth-child(2) li {
+  display: inline-block;
+
+}
+.nav ul:nth-child(2) li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 19px 16px;
+  text-decoration: none;
+}
+.nav ul:nth-child(2) li a:hover{
+  background-color: #d1d1e0;
+  color: #29293d;
+}
+
+.clear {
+  clear: both;
+}
+.active {
+  background-color: #666699;
+}
+
+.logo-img{
+  float: left;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 7px 7px;
+}
+
+/* form */
+
+.registrationform {
+  border: 1px solid black;
+}
+
+.formheading {
+  font-size: 25px;
+  color: #454749;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.main {
+  width: 380px;
+  background-color: white;
+  border-radius: 3px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.reglabel {
+  text-align: left;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  display: block;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.formfieldset {
+  border: none;
+}
+.reginput {
+  width: 92%;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid lightgray;
+}
+
+/* Radio */
+
+.gender {
+  display: inline-block;
+}
+
+.formgender {
+  display: inline;
+  margin-left: 20px;
+  padding: 5px 20px;
+  width: 10%;
+}
+
+/* Checkbox */
+
+.formcheckbox {
+  width: auto;
+  margin-right: 10px;
+}
+.regcheck {
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+
+/* DOB */
+
+.dob {
+  width: 15%;
+  display: inline-block;
+}
+.dobdate {
+  width: 70%;
+  display: inline-block;
+  margin-left: 7%;
+}
+
+/* select */
+.country {
+  width: 15%;
+  display: inline-block;
+}
+.countryselect {
+  width: 70%;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid lightgray;
+  margin-left: 7%;
+}
+.countrydesign {
+  padding-top: 18px;
+}
+
+/* submit */
+.submit {
+  width: 100%;
+}
+
+/* media queries */
+
+/* Mobiles in Portrait mode */
+
+@media screen and (max-width:1200px){
+  .nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:360px){
+  .main {
+    width: 80%;
+  }
+  .countryselect {
+    width: 59%;
+    margin-left: 15%;
+  }
+  .dobdate {
+    width: 59%;
+    margin-left: 15%;
+  }
+}
+
+@media screen and (min-width:361px) and (max-width:450px){
+  .main {
+    width: 80%;
+  }
+  .countryselect {
+    width: 64%;
+    margin-left: 10.9%;
+  }
+  .dobdate {
+    width: 64%;
+    margin-left: 10.9%;
+  }
+}
